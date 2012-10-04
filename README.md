@@ -4,7 +4,7 @@ A simple ring handler for exposing functions to a cljs client, mostly an extract
 
 Reasons this library exists:
 
-- No dependencies, the remoter is just a function that functions as a ring handler function.
+- No dependencies, the remoter is just a function that acts as a ring middleware.
 - Can expose multiple remote points at different urls, allowing authorisation and modularisation.
 
 ## Installation
@@ -15,9 +15,9 @@ This is experimental and the api could change. There are likely a few bugs or ba
 [cljs-ring-remotes "0.1.7"]
 ```
 
-### Example use
+## Example use
 
-Server-side
+### Server-side
 
 ```clojure
 (ns cljs-ring-remotes.example
@@ -69,6 +69,6 @@ Use just like fetch, but with an additional parameter to specify which remoter t
   (js/alert (str a " and " b)))
 ```
 
-### License
+## License
 
 Eclipse Public License, just like Clojure.
